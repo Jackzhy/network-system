@@ -1,0 +1,2150 @@
+########################### README #########################################
+# THIS IS A SAMPLE OUT OUT THAT THE LINK CHANGE WILL CHANGE DURING RUNNING.#
+# FOR CONVINENCE THERE ARE ROW NUBERS OF KEY OUTPUT TABLES                 #
+# 850, 873, 1038, 1063 (FINAL TABLES BEFORE CHAGE )                        #
+# 1557, 1610, 1652, 1696 (FINAL TABLES AFTER CHANGE A LINK TO 20)          #
+# 1948, 2023, 2096, 2137 (FINAL TABLES AFTER THE LINK BACK TO 1)           #
+############################################################################
+HongyudeMacBook:pa3 hongyuzhou$ gcc *.c -Wall -o prog3
+HongyudeMacBook:pa3 hongyuzhou$ ./prog3
+Enter TRACE:2
+Enter SEED:1
+################ rtinit0 is called! ##############
+#The time is : 0.000000
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|  9999   9999
+dest 2|  9999   9999
+     3|  9999   9999
+################ rtinit1 is called! ##############
+#The time is : 0.000000
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|  9999   9999   9999
+dest 2|  9999   9999   9999
+     3|  9999   9999   9999
+################ rtinit2 is called! ##############
+#The time is : 0.000000
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|  9999   9999   9999
+dest 1|  9999   9999   9999
+     3|  9999   9999   9999
+################ rtinit3 is called! ##############
+#The time is : 0.000000
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999   9999
+dest 1|  9999   9999
+     2|  9999   9999
+MAIN: rcv event, t=0.352, at 2 src: 0, dest: 2, contents:   0   1   1 9999
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 0.351512
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2   9999   9999
+     3|  10000   9999   9999
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2   9999   9999
+     3|  9999   9999   9999
+MAIN: rcv event, t=0.617, at 0 src: 1, dest: 0, contents:   1   0  10   7
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 0.617267
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|  9999   9999
+dest 2|  9999   9999
+     3|  9999   9999
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999   9999
+     3|  9999   9999
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|   11   9999
+     3|  9999   9999
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|   11   9999
+     3|    8   9999
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999   9999
+     3|    8   9999
+MAIN: rcv event, t=0.961, at 0 src: 2, dest: 0, contents:   1  10   0   2
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 0.960784
+packet is send from: 2
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999   9999
+     3|    8   9999
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1    11
+dest 2|  9999   9999
+     3|    8   9999
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1    11
+dest 2|  9999     1
+     3|    8   9999
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1    11
+dest 2|  9999     1
+     3|    8     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+MAIN: rcv event, t=1.028, at 1 src: 0, dest: 1, contents:   0   1   1 9999
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 1.027741
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|  9999   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|  9999   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|    2   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|    2   9999   9999
+     3|  10000   9999   9999
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 2|    2   9999   9999
+     3|  9999   9999   9999
+MAIN: rcv event, t=1.129, at 0 src: 2, dest: 0, contents:   1   2   0   2
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 1.128574
+packet is send from: 2
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1     3
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+MAIN: rcv event, t=1.421, at 2 src: 1, dest: 2, contents:   1   0  10   7
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 1.420637
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999    17   9999
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999   9999
+MAIN: rcv event, t=1.670, at 2 src: 3, dest: 2, contents: 9999   7   2   0
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 1.670034
+packet is send from: 3
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10     9
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10     9
+     3|  9999   9999   9999
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   10001
+dest 1|    2    10     9
+     3|  9999   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=1.895, at 3 src: 1, dest: 3, contents:   1   0  10   7
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 1.895322
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8   9999
+dest 1|  9999   9999
+     2|  9999   9999
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8   9999
+dest 1|    7   9999
+     2|  9999   9999
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8   9999
+dest 1|    7   9999
+     2|   17   9999
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8   9999
+dest 1|    7   9999
+     2|   17   9999
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8   9999
+dest 1|    7   9999
+     2|  9999   9999
+MAIN: rcv event, t=2.348, at 3 src: 2, dest: 3, contents:   1  10   0   2
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 2.348216
+packet is send from: 2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|  9999   9999
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7    12
+     2|  9999   9999
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7    12
+     2|  9999     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7    12
+     2|  9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|  9999     2
+MAIN: rcv event, t=2.422, at 0 src: 1, dest: 0, contents:   1   0   2   7
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 2.421583
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|    3     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|    3     1
+     3|    8     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+MAIN: rcv event, t=2.432, at 1 src: 2, dest: 1, contents:   1  10   0   2
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 2.432264
+packet is send from: 2
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2   9999   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10   9999
+     3|  9999   9999   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10   9999
+     3|  9999    12   9999
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10   9999
+     3|  9999    12   9999
+MAIN: rcv event, t=2.903, at 3 src: 2, dest: 3, contents:   1   2   0   2
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 2.902676
+packet is send from: 2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|  9999     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|  9999     2
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|  9999     2
+MAIN: rcv event, t=3.422, at 1 src: 3, dest: 1, contents: 9999   7   2   0
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 3.421857
+packet is send from: 3
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10   9999
+     3|  9999    12   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10   9999
+     3|  9999    12   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10     9
+     3|  9999    12   9999
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   10006
+dest 2|    2    10     9
+     3|  9999    12     7
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|  9999    12     7
+MAIN: rcv event, t=3.637, at 2 src: 0, dest: 2, contents:   0   1   1   8
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 3.636952
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|    9   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=4.201, at 1 src: 2, dest: 1, contents:   1   2   0   2
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 4.201117
+packet is send from: 2
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|  9999    12     7
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|  9999    12     7
+MAIN: rcv event, t=4.463, at 3 src: 1, dest: 3, contents:   1   0   2   7
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 4.463210
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+MAIN: rcv event, t=4.937, at 1 src: 0, dest: 1, contents:   0   1   1   8
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 4.937284
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|  9999    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|    9    12     7
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|  9999    12     7
+MAIN: rcv event, t=5.168, at 2 src: 0, dest: 2, contents:   0   1   1   3
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 5.168371
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|    4   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=6.008, at 1 src: 0, dest: 1, contents:   0   1   1   3
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 6.008118
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|  9999    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|    4    12     7
+MAIN: rcv event, t=6.703, at 2 src: 1, dest: 2, contents:   1   0   2   7
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 6.702719
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=7.007, at 2 src: 3, dest: 2, contents:   8   7   2   0
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 7.006623
+packet is send from: 3
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11    10
+dest 1|    2    10     9
+     3|  9999   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=7.048, at 0 src: 1, dest: 0, contents:   1   0   2   4
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 7.047639
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|    3     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|    3     1
+     3|    5     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT:  FINAL D0 TABLE
+============================================================================================
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+============================================================================================
+MAIN: rcv event, t=7.222, at 3 src: 1, dest: 3, contents:   1   0   2   4
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 7.221656
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT:  FINAL D3 TABLE
+============================================================================================
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     3
+============================================================================================
+MAIN: rcv event, t=7.636, at 2 src: 3, dest: 2, contents:   3   7   2   0
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 7.635975
+packet is send from: 3
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10     9
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10     9
+     3|  9999   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=7.654, at 1 src: 3, dest: 1, contents:   8   7   2   0
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 7.654103
+packet is send from: 3
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    15
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    15
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11   9999
+dest 2|    2    10     9
+     3|    4    12     7
+MAIN: rcv event, t=8.905, at 1 src: 3, dest: 1, contents:   3   7   2   0
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 8.905057
+packet is send from: 3
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+MAIN: rcv event, t=9.470, at 2 src: 3, dest: 2, contents:   3   4   2   0
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 9.470382
+packet is send from: 3
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10     6
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10     6
+     3|  9999   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=9.599, at 1 src: 3, dest: 1, contents:   3   4   2   0
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 9.598865
+packet is send from: 3
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT:  FINAL D1 TABLE
+============================================================================================
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+============================================================================================
+MAIN: rcv event, t=10.273, at 2 src: 1, dest: 2, contents:   1   0   2   4
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10.272774
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999    14     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT:  FINAL D2 TABLE
+============================================================================================
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+============================================================================================
+MAIN: rcv event, t=10000.000, at -1>>>>>>>>>>>>>>>>>>>>>>>>>>>> linkhandler0 is called! <<<<<<<<<<<<<<<<<<<<<<<<<<<
+#The time is : 10000.000000
+>>>>>>>>>>>>>>>>>>>>>>>>>>>> linkhandler1 is called! <<<<<<<<<<<<<<<<<<<<<<<<<<<
+#The time is : 10000.000000
+MAIN: rcv event, t=10001.349, at 3 src: 1, dest: 3, contents:  20   0   2   4
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 10001.349040
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|   27     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|   27     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7     4
+     2|    9     2
+MAIN: rcv event, t=10001.571, at 1 src: 0, dest: 1, contents:   0  20   1   3
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 10001.570910
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|    4    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+MAIN: rcv event, t=10001.740, at 0 src: 1, dest: 0, contents:  20   0   2   4
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 10001.739921
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   22     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   22     1
+     3|   24     3
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   22     1
+     3|   24     3
+MAIN: rcv event, t=10001.863, at 2 src: 0, dest: 2, contents:   0  20   1   3
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10001.863155
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|   21    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|   21    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|   21    10   9999
+     3|    4   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|  9999    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=10002.264, at 1 src: 2, dest: 1, contents:   1  10   0   2
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 10002.263680
+packet is send from: 2
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+MAIN: rcv event, t=10002.349, at 3 src: 1, dest: 3, contents:  10   0   9   7
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 10002.349376
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|   17     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|   17     3
+dest 1|    7     4
+     2|   16     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|   17     3
+dest 1|    7     4
+     2|   16     2
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7     4
+     2|  9999     2
+MAIN: rcv event, t=10003.257, at 0 src: 1, dest: 0, contents:  10   0   9   7
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 10003.256813
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   22     1
+     3|   24     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   29     1
+     3|   24     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   29     1
+     3|   27     3
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   29     1
+     3|   27     3
+MAIN: rcv event, t=10003.596, at 2 src: 1, dest: 2, contents:  20   0   2   4
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10003.596301
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    30   9999
+dest 1|  9999    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    30   9999
+dest 1|  9999    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    30   9999
+dest 1|  9999    10   9999
+     3|  9999    14     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999    10   9999
+     3|  9999    14     2
+MAIN: rcv event, t=10003.968, at 0 src: 2, dest: 0, contents:   1  10   0   2
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 10003.968139
+packet is send from: 2
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20   9999
+dest 2|   29     1
+     3|   27     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20    11
+dest 2|   29     1
+     3|   27     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20    11
+dest 2|   29     1
+     3|   27     3
+MAIN: rcv event, t=10004.003, at 3 src: 2, dest: 3, contents:   1  10   0   2
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 10004.003235
+packet is send from: 2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7    12
+     2|  9999     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7    12
+     2|  9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7   9999
+     2|  9999     2
+MAIN: rcv event, t=10004.760, at 2 src: 1, dest: 2, contents:  10   0   9   7
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10004.760155
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|  9999    10   9999
+     3|  9999    14     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|  9999    10   9999
+     3|  9999    14     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|  9999    10   9999
+     3|  9999    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|  9999    10   9999
+     3|  9999    17     2
+MAIN: rcv event, t=10004.800, at 1 src: 0, dest: 1, contents:   0  11   1   3
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 10004.800012
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+MAIN: rcv event, t=10005.687, at 2 src: 0, dest: 2, contents:   0  11   1   3
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10005.687185
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|   12    10   9999
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|   12    10   9999
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|   12    10   9999
+     3|    4    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20   9999
+dest 1|  9999    10   9999
+     3|  9999    17     2
+MAIN: rcv event, t=10005.940, at 2 src: 3, dest: 2, contents:   3   7   2   0
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10005.940062
+packet is send from: 3
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20     5
+dest 1|  9999    10   9999
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20     5
+dest 1|  9999    10     9
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    20     5
+dest 1|  9999    10     9
+     3|  9999    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999    10     9
+     3|  9999    17     2
+MAIN: rcv event, t=10006.365, at 0 src: 2, dest: 0, contents:   1   9   0   2
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 10006.365307
+packet is send from: 2
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20    11
+dest 2|   29     1
+     3|   27     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20    10
+dest 2|   29     1
+     3|   27     3
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D0 AFTER LINK COST CHANGE TO 20
+============================================================================================
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20    10
+dest 2|   29     1
+     3|   27     3
+============================================================================================
+MAIN: rcv event, t=10006.758, at 1 src: 3, dest: 1, contents:   3   7   2   0
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 10006.758385
+packet is send from: 3
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+MAIN: rcv event, t=10007.415, at 3 src: 2, dest: 3, contents:   1   9   0   2
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 10007.415082
+packet is send from: 2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7    11
+     2|  9999     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7    11
+     2|  9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D3 AFTER LINK COST CHANGE TO 20
+============================================================================================
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|  9999     3
+dest 1|    7   9999
+     2|  9999     2
+============================================================================================
+MAIN: rcv event, t=10007.926, at 2 src: 0, dest: 2, contents:   0  10   1   3
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 10007.925596
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|   11    10     9
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|   11    10     9
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|   11    10     9
+     3|    4    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D2 AFTER LINK COST CHANGE TO 20
+============================================================================================
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|  9999    10     9
+     3|  9999    17     2
+============================================================================================
+MAIN: rcv event, t=10008.675, at 1 src: 2, dest: 1, contents:   1   9   0   2
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 10008.675314
+packet is send from: 2
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+MAIN: rcv event, t=10009.493, at 1 src: 0, dest: 1, contents:   0  10   1   3
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 10009.493454
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D1 AFTER LINK COST CHANGE TO 20
+============================================================================================
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|   20    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+============================================================================================
+MAIN: rcv event, t=20000.000, at 0>>>>>>>>>>>>>>>>>>>>>>>>>>>> linkhandler0 is called! <<<<<<<<<<<<<<<<<<<<<<<<<<<
+#The time is : 20000.000000
+>>>>>>>>>>>>>>>>>>>>>>>>>>>> linkhandler1 is called! <<<<<<<<<<<<<<<<<<<<<<<<<<<
+#The time is : 20000.000000
+MAIN: rcv event, t=20000.056, at 0 src: 1, dest: 0, contents:   1   0   9   7
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 20000.056215
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|   20    10
+dest 2|   29     1
+     3|   27     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1    10
+dest 2|   29     1
+     3|   27     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1    10
+dest 2|   10     1
+     3|   27     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1    10
+dest 2|   10     1
+     3|    8     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+MAIN: rcv event, t=20001.514, at 3 src: 1, dest: 3, contents:   1   0   9   7
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 20001.513962
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|  9999     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|   16     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|   16     2
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|  9999     2
+MAIN: rcv event, t=20001.516, at 1 src: 0, dest: 1, contents:   0   1   1   3
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 20001.515793
+packet is send from: 0
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|   21    10     9
+     3|   23    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|   23    12     7
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+MAIN: rcv event, t=20001.603, at 3 src: 1, dest: 3, contents:   1   0   2   4
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 20001.602649
+packet is send from: 1
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|    9     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|    9     2
+Table changed
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7   9999
+     2|    9     2
+MAIN: rcv event, t=20001.914, at 2 src: 0, dest: 2, contents:   0   1   1   3
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 20001.913694
+packet is send from: 0
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2    10     9
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2    10     9
+     3|  9999    17     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2    10     9
+     3|    4    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1   9999   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=20002.002, at 0 src: 1, dest: 0, contents:   1   0   2   4
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 20002.001831
+packet is send from: 1
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|    3     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|    3     1
+     3|    5     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+MAIN: rcv event, t=20002.032, at 3 src: 2, dest: 3, contents:   1   2   0   2
+@@@@@@@@@@@@rtupdate3 is called!@@@@@@@@@@@@@
+#The time is : 20002.032472
+packet is send from: 2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D0 AFTER LINK COST BACK TO 1
+============================================================================================
+                via
+   D3 |    1     2
+  ----|-----------------
+     0|    8     3
+dest 1|    7     4
+     2|    9     2
+============================================================================================
+MAIN: rcv event, t=20002.551, at 2 src: 1, dest: 2, contents:   1   0   9   7
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 20002.551164
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999    17     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=20002.552, at 1 src: 2, dest: 1, contents:   1   2   0   2
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 20002.551958
+packet is send from: 2
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+MAIN: rcv event, t=20003.436, at 1 src: 3, dest: 1, contents:   3   4   2   0
+@@@@@@@@@@@@rtupdate1 is called!@@@@@@@@@@@@@
+#The time is : 20003.435713
+packet is send from: 3
+Table changed
+============================================================================================
+HIGHLIGHT: D1 AFTER LINK COST BACK TO 1
+============================================================================================
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+============================================================================================
+Table changed
+Table changed
+Table changed
+                via
+   D1 |    0     2    3
+  ----|-----------------
+     0|    1    11    10
+dest 2|    2    10     9
+     3|    4    12     7
+MAIN: rcv event, t=20003.730, at 2 src: 1, dest: 2, contents:   1   0   2   4
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 20003.730277
+packet is send from: 1
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999    14     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+MAIN: rcv event, t=20003.914, at 0 src: 2, dest: 0, contents:   1   2   0   2
+@@@@@@@@@@@@rtupdate0 is called!@@@@@@@@@@@@@
+#The time is : 20003.913999
+packet is send from: 2
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1     3
+dest 2|  9999     1
+     3|  9999     3
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D0 AFTER LINK COST BACK TO 1
+============================================================================================
+                via
+   D0 |    1     2
+  ----|-----------------
+     1|    1   9999
+dest 2|  9999     1
+     3|  9999     3
+============================================================================================
+MAIN: rcv event, t=20005.560, at 2 src: 3, dest: 2, contents:   3   4   2   0
+@@@@@@@@@@@@rtupdate2 is called!@@@@@@@@@@@@@
+#The time is : 20005.560350
+packet is send from: 3
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10   9999
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10     6
+     3|  9999   9999     2
+Table changed
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11     5
+dest 1|    2    10     6
+     3|  9999   9999     2
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+Table changed
+============================================================================================
+HIGHLIGHT: D2 AFTER LINK COST BACK TO 1
+============================================================================================
+                via
+   D2 |    0     1    3
+  ----|-----------------
+     0|    1    11   9999
+dest 1|    2    10   9999
+     3|  9999   9999     2
+============================================================================================
+
+Simulator terminated at t=20005.560350, no packets in medium
+HongyudeMacBook:pa3 hongyuzhou$
